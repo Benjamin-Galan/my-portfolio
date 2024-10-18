@@ -1,0 +1,71 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.ruta{
+    @include m.botonEnlaces;
+    margin: auto;
+}
+
+.login{
+    padding: 5rem 10rem;
+}
+
+.formulario{
+    p{
+        font-size: 1.4rem;
+        color: v.$dark2;
+        margin: 2rem 0 0 0;
+    }
+    legend{
+        font-size: 2rem;
+        color: v.$dark2;
+    }
+    label{
+        font-weight: 700;
+        text-transform: uppercase;
+        display: block;
+    }
+    input:not([type="submit"]),
+    textarea,
+    select{
+        padding: 1rem;
+        display: block;
+        width: 100%;
+        background-color: v.$blanco;
+        border: 1px solid v.$dark3;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    textarea{
+        height: 10rem;
+    }
+
+    input[type="radio"]{
+        margin: 0;
+        width: auto;
+    }
+
+    input[type="submit"]{
+        @include m.botonSubmit;
+    }
+}
+
+.actualizar-imagen {
+    img {
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+    }
+
+    @include m.tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 25rem;
+            margin: 1rem;
+            border-radius: 1rem;
+        }
+    }
+}

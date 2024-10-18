@@ -1,0 +1,95 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.dark-mode {
+    background-color: v.$dark2;
+
+    .header {
+        background-color: v.$dark2;
+
+        nav {
+            a {
+                color: v.$blanco;
+            }
+        }
+
+        h1 {
+            color: v.$blanco;
+        }
+
+        .mobile-menu {
+            filter: invert(100%);
+        }
+    }
+
+    .presentacion {
+        p {
+            color: v.$blanco;
+        }
+    }
+
+    .proyectos {
+
+        h2,
+        p {
+            color: v.$blanco;
+        }
+
+        h3 {
+            color: v.$amarillo;
+            font-weight: 800;
+        }
+    }
+
+    .about {
+        h2,
+        h4,
+        p {
+            color: v.$blanco;
+        }
+
+        li{
+            color: v.$blanco;
+        }
+    }
+
+    .contact,
+    .login {
+
+        h2,
+        h1,
+        label {
+            color: v.$blanco;
+        }
+
+        p {
+            color: v.$amarillo;
+            font-weight: 600;
+        }
+    }
+
+    .presentacion,
+    .proyectos {
+        a {
+            filter: invert(100%);
+        }
+    }
+
+    .formulario {
+        label,
+        legend,
+        p {
+            color: v.$gris;
+        }
+
+        input:not([type="submit"]),
+        textarea,
+        select {
+            background-color: v.$grisOscuro;
+            color: v.$blanco;
+            border: 1px solid v.$grisOscuro;
+        }
+    }
+
+
+}

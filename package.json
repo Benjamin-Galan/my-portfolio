@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-static",
+  "version": "1.0.0",
+  "description": "portfolio web de benjamin galan",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "sass": "sass src/scss:build/css",
+    "dev": "gulp dev"
+  },
+  "keywords": [
+    "portofolio",
+    "benja.dev",
+    "php",
+    "sass",
+    "javascript",
+    "html"
+  ],
+  "author": "Benjamín Galán",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.80.2",
+    "sharp": "^0.33.5"
+  }
+}

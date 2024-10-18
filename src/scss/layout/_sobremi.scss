@@ -1,0 +1,73 @@
+@use 'base/mixins' as m;
+
+.about {
+    @include m.contenedor;
+}
+
+.sobre-mi {
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        place-items: center;
+    }
+}
+
+.tecnologias {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0;
+
+        li {
+            transition: transform 300ms ease, box-shadow 300ms ease;
+            border-radius: 2rem;
+            padding: .5rem 1rem;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+            gap: 1rem;
+            list-style: none;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+            }
+
+            &:nth-child(1) {
+                border: 2px solid rgb(255, 136, 0);
+            }
+
+            &:nth-child(2) {
+                border: 2px solid rgb(17, 132, 209);
+            }
+
+            &:nth-child(3) {
+                border: 2px solid orange;
+            }
+
+            &:nth-child(4) {
+                border: 2px solid rgb(115, 97, 194);
+            }
+
+            &:nth-child(5) {
+                border: 2px solid rgb(67, 104, 146);
+            }
+
+            &:nth-child(6) {
+                border: 2px solid rgb(255, 51, 0);
+            }
+
+            &:nth-child(7) {
+                border: 2px solid rgb(224, 16, 1);
+            }
+
+            &:nth-child(8) {
+                border: 2px solid rgb(175, 100, 15);
+            }
+        }
+
+    }
+}

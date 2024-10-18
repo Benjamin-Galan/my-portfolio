@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer {
+    background-color: v.$dark2;
+    padding: 3rem;
+    p{
+        filter: invert(50%);
+    }
+
+    .contenido-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+        @include m.tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        
+    }
+}
+
+.footer-enlaces {
+    display: flex;
+    gap: 3rem;
+
+    img {
+        width: 32px;
+        height: 32px;
+        filter: invert(50%);
+    }
+}
