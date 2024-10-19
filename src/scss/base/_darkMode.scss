@@ -2,14 +2,14 @@
 @use 'base/mixins' as m;
 
 .dark-mode {
-    background: linear-gradient(to bottom right, v.$dark2, v.$dark3);
+    background: linear-gradient(to bottom right, v.$background, v.$background-light);
 
     .footer{
         background: transparent;
     }
 
     .header {
-        background: linear-gradient(to bottom left, v.$dark3, v.$dark2);
+        background: linear-gradient(to bottom left, v.$background-light, v.$background);
 
         nav {
             a {
