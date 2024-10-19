@@ -26,7 +26,7 @@
         padding: 0;
 
         li {
-            transition: transform 300ms ease, box-shadow 300ms ease;
+            transition: transform 300ms, box-shadow 300ms ease;
             border-radius: 2rem;
             padding: .5rem 1rem;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@
             list-style: none;
 
             &:hover {
-                transform: scale(1.02);
+                transform: scale(1.05);
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
                 cursor: pointer;
             }
