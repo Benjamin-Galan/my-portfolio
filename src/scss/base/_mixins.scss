@@ -38,13 +38,6 @@
     margin: 0 auto;
 }
 
-@mixin contenedorAdmin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 5rem;
-}
-
 //estilos para los botones
 @mixin botonEnlaces {
     border: 1px solid v.$dark2;
