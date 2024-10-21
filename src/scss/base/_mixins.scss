@@ -99,3 +99,41 @@
     width: 24px;
     height: 24px;
 }
+
+@mixin tecnologias{
+    .html {
+        border: 2px solid rgb(255, 136, 0);
+    }
+    
+    .css {
+        border: 2px solid rgb(17, 132, 209);
+    }
+    
+    .javascript {
+        border: 2px solid orange;
+    }
+    
+    .php {
+        border: 2px solid rgb(115, 97, 194);
+    }
+    
+    .mysql {
+        border: 2px solid rgb(67, 104, 146);
+    }
+    
+    .git {
+        border: 2px solid rgb(255, 51, 0);
+    }
+    
+    .npm {
+        border: 2px solid rgb(224, 16, 1);
+    }
+    
+    .composer {
+        border: 2px solid rgb(175, 100, 15);
+    }
+
+    .sass{
+        border: 2px solid #e91e63;
+    }
+}
