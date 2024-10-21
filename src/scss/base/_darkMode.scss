@@ -33,7 +33,6 @@
     }
 
     .proyectos {
-
         h2,
         p {
             color: v.$blanco;
@@ -42,6 +41,20 @@
         h3 {
             color: v.$amarillo;
             font-weight: 800;
+        }
+
+        ul{
+            .php{
+                svg{
+                    filter: invert(100%);
+                }
+            }
+
+            li{
+                span{
+                   color: v.$blanco;
+                }
+            }
         }
     }
 
