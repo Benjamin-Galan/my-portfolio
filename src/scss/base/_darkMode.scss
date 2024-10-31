@@ -72,16 +72,16 @@
 
     .contact,
     .login {
-
         h2,
         h1,
         label {
             color: v.$blanco;
         }
+    }
 
-        p {
-            color: v.$amarillo;
-            font-weight: 600;
+    .contenido-contacto{
+        img{
+            filter: invert(60%);
         }
     }
 
