@@ -25,15 +25,15 @@
     }
 }
 
-@mixin contenedor {
-    width: 95%;
-    max-width: 80rem;
-    margin: 0 auto;
+@mixin grid($columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
 }
 
-@mixin contenedorHeader {
+@mixin contenedor {
     width: 95%;
-    max-width: 90rem;
+    max-width: 85rem;
     margin: 0 auto;
 }
 
@@ -100,40 +100,40 @@
     height: 24px;
 }
 
-@mixin tecnologias{
+@mixin tecnologias {
     .html {
         border: 2px solid rgb(255, 136, 0);
     }
-    
+
     .css {
         border: 2px solid rgb(17, 132, 209);
     }
-    
+
     .javascript {
         border: 2px solid orange;
     }
-    
+
     .php {
         border: 2px solid rgb(115, 97, 194);
     }
-    
+
     .mysql {
         border: 2px solid rgb(67, 104, 146);
     }
-    
+
     .git {
         border: 2px solid rgb(255, 51, 0);
     }
-    
+
     .npm {
         border: 2px solid rgb(224, 16, 1);
     }
-    
+
     .composer {
         border: 2px solid rgb(175, 100, 15);
     }
 
-    .sass{
+    .sass {
         border: 2px solid #e91e63;
     }
 }
