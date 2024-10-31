@@ -5,18 +5,21 @@
     @include m.contenedor;
 }
 
-.seccion{
-    h1{
+.seccion {
+    h1 {
         text-align: center;
         padding-top: 2rem;
     }
 }
 
 .contenido-contacto {
-    @include m.tablet {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
+    img {
+        width: 3rem;
+    }
+
+    p {
+        color: v.$celeste;
+        font-weight: 600;
     }
 }
 
@@ -42,20 +45,43 @@
     }
 }
 
-.contacto{
+.contacto {
     margin-bottom: 3rem;
+
+    @include m.telefono{
+        @include m.grid(2, 1rem);
+    }
+    
+    @include m.tablet{
+        @include m.grid(3, 1rem);
+    }
 }
+
+.socials {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        @include m.telefono {
+            svg {
+                transform: translateY(5px);
+                transition: transform 0.5s ease, box-shadow 0.3s ease;
+    
+                &:hover {
+                    cursor: pointer;
+                    transition: transform 0.5s ease, box-shadow 0.3s ease;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
 
 .info-contacto {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
-    
-    @include m.tablet{
-        margin-bottom: 3rem;
-    }
 
-    img {
-        width: 32px;
+    @include m.tablet {
+        margin-bottom: 3rem;
     }
 }
