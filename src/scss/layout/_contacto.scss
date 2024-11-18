@@ -48,33 +48,31 @@
 .contacto {
     margin-bottom: 3rem;
 
-    @include m.telefono{
+    @include m.telefono {
         @include m.grid(2, 1rem);
     }
-    
-    @include m.tablet{
+
+    @include m.tablet {
         @include m.grid(3, 1rem);
     }
 }
 
 .socials {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 
-        @include m.telefono {
-            svg {
-                transform: translateY(5px);
-                transition: transform 0.5s ease, box-shadow 0.3s ease;
-    
-                &:hover {
-                    cursor: pointer;
-                    transition: transform 0.5s ease, box-shadow 0.3s ease;
-                    transform: scale(1);
-                }
-            }
+    @include m.telefono {
+        transform: translateY(1px);
+        transition: transform 0.5s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            cursor: pointer;
+            transition: transform 0.5s ease, box-shadow 0.3s ease;
+            transform: scale(1);
         }
     }
+}
 
 .info-contacto {
     display: flex;
@@ -84,4 +82,9 @@
     @include m.tablet {
         margin-bottom: 3rem;
     }
+}
+
+.link{
+    display: flex;
+    gap: 1rem;
 }
